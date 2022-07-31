@@ -13,10 +13,10 @@ null_ls.setup {
   sources = {
     -- Python
     formatting.black.with { extra_args = { "--fast" } },
+    formatting.isort,
     diagnostics.flake8,
     diagnostics.mypy,
     diagnostics.pylint,
-    diagnostics.isort,
     -- Misc
     formatting.prettier.with {
       extra_filetypes = { "toml" },
