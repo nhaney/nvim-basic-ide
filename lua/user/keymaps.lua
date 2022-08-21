@@ -51,7 +51,7 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
-vim.keymap.set("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
+vim.keymap.set("n", "<C-p>", ":Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>fp", ":Telescope projects<CR>", opts)
 vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 
@@ -72,3 +72,4 @@ vim.keymap.set("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opt
 vim.keymap.set("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 vim.keymap.set("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 vim.keymap.set("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
